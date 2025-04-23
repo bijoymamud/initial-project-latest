@@ -10,8 +10,8 @@ const Login = () => {
  
       <div className="w-full md:w-1/2 h-[30vh] md:h-screen relative bg-gray-900">
       <Lottie
-        animationData={login} 
-        loop={true} 
+          animationData={login} 
+          loop={false}
         className="absolute inset-0 w-3/4 h-full mx-auto object-cover"></Lottie>
       </div>
 
@@ -55,7 +55,7 @@ const Login = () => {
               
               <div className='flex mx-auto justify-end mb-10'>
                 <Link 
-                to="/email_varification"
+                to="/verify"
                 className='text-[#8F5E0A] font-semibold cursor-pointer hover:underline text-end pt-2'>Forgot Password?</Link>
               </div>
 
@@ -63,7 +63,7 @@ const Login = () => {
 to="/login"
 className=''
 >
-<button className='w-full bg-[#B28D28] p-2 rounded-full text-white text-base font-semibold'>Login</button>
+<button className='w-full bg-[#B28D28] p-2 rounded-full text-white text-base font-semibold cursor-pointer'>Login</button>
 </Link>
 
               <p className="text-center  text-gray-900 mt-2">
