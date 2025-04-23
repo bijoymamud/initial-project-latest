@@ -36,7 +36,7 @@ const Login = () => {
                   <input 
                     type="email" 
                     placeholder="Enter your email" 
-                    className="input input-bordered border-[#B28D2866]/40 w-full pl-10 bg-white/20  text-white placeholder-gray-300" 
+                    className="input input-bordered border-[#B28D2866]/40 w-full pl-10 bg-white/20  text-black placeholder-gray-300" 
                   />
                   <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
                 </div>
@@ -47,7 +47,7 @@ const Login = () => {
                   <input 
                     type="password" 
                     placeholder="Enter your password" 
-                    className="input input-bordered w-full pl-10 bg-white/20 border-[#B28D2866]/40 text-white placeholder-gray-300" 
+                    className="input input-bordered w-full pl-10 bg-white/20 border-[#B28D2866]/40 text-black placeholder-gray-300" 
                   />
                   <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
                 </div>
