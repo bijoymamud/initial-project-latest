@@ -7,6 +7,7 @@ import DashboardLayout from "../Layout/Admin/DashboardLayout";
 import EmailVerification from "../Pages/Authentication/EmailVerification";
 import OTP_Verification from "../Pages/Authentication/OTP_Verification";
 import ResetPassword from "../Pages/Authentication/ResetPassword";
+import Admin_Home from "../Layout/Admin/Admin_Home";
   
 
 export const router = createBrowserRouter([
@@ -18,14 +19,15 @@ export const router = createBrowserRouter([
       ]
     },
 
-    //dashboard
     {
         path: '/dashboard',
         element: <DashboardLayout />,
-        children: []
+      children: [
+      {index: true, element: <Admin_Home />},
+      {path: 'admin_home', element: <Admin_Home/>}
+        ]
     },
 
-    //authentication
     {path: '/sign_up', element: <Registration/>},
     {path: '/login', element: <Login/>},
     {path: '/verify', element: <EmailVerification/>},
